@@ -15,8 +15,8 @@ if [ ! -f $1 ];then
     echo "创建resolution ing"
     touch $1.h
     echo "#include<header.h>\n" >> $1.h
-    echo "class Solution {\n\n" >> $1.h
-    echo "}\n" >> $1.h
+    echo "class Solution {\npublic:\n" >> $1.h
+    echo "};\n" >> $1.h
 else
     echo "对应resolution 已存在"
 fi
